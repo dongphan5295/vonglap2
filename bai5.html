@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let money = +prompt('Nhap so tien ban dau :');
+        const ls = 12/100;
+        let i = 1;
+        let laikyhan = 0
+        for (i; i <= 12; i++) {
+            let laithang=((money+laikyhan)*ls)/12;
+            laikyhan +=laithang;
+        }
+        document.write(laikyhan);
+
+    </script>
+</body>
+
+</html>
